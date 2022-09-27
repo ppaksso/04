@@ -6,10 +6,10 @@
 int main(int argc, char *argv[]) {
 	
 	int x;
-	printf("input minute");
+	printf("input second");
 	scanf("%i",&x);
 	
-	printf("the time is %d : %d",x/60,x%60);
+	printf("%i second is  %d : %d\n",x,x/60,x%60);
 
 	
 	 
