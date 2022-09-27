@@ -6,12 +6,15 @@
 int main(int argc, char *argv[]) {
 	
 	int x;
-	printf("input second");
+	printf("input the year :");
 	scanf("%i",&x);
 	
-	printf("%i second is  %d : %d\n",x,x/60,x%60);
+	if ( (x%4==0 && x%100!=0 )||
+	     x%400==0)
+	  printf("%i is the leap year!\n",x);
+    else
+	  printf("%i is not leap year!\n",x);
 
-	
 	 
 	return 0;
 }
